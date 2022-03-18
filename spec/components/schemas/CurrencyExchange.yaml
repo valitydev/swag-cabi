@@ -25,4 +25,3 @@ properties:
     $ref: "#/components/schemas/ExchangeAction"
   amount:
     $ref: "#/components/schemas/Amount"
-
