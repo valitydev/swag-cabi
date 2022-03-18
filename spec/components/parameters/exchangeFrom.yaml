@@ -1,0 +1,6 @@
+name: from
+in: query
+description: Отдаваемая валюта (3 символа ISO 4217)
+required: true
+schema:
+  $ref: '#/components/schemas/Currency'

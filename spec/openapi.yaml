@@ -1,0 +1,24 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: RBKmoney Cabi API
+  description: >
+
+    Crypto API
+
+  termsOfService: http://rbk.money/
+  contact:
+    name: RBKmoney support team
+    email: support@rbk.money
+    url: https://rbk.money
+servers:
+  - url: 'https://{subdomain}.rbk.money/cabi/{version}'
+    variables:
+      subdomain:
+        default: api
+      version:
+        enum:
+          - v1
+        default: v1
+security:
+  - APIKey: []

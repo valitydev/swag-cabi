@@ -1,0 +1,5 @@
+description: Покупка/Продажа валюты
+type: string
+enum:
+  - BUY
+  - SELL

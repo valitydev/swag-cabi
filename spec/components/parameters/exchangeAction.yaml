@@ -1,0 +1,6 @@
+name: action
+in: query
+description: Покупка/продажа валюты
+required: true
+schema:
+  $ref: '#/components/schemas/ExchangeAction'

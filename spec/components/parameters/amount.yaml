@@ -1,0 +1,6 @@
+name: amount
+in: query
+description: Сумма транзакции
+required: true
+schema:
+  $ref: '#/components/schemas/Amount'

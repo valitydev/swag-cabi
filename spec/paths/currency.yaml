@@ -1,0 +1,22 @@
+get:
+  tags:
+    - exchange
+  operationId: currencyExchange
+  description: |
+    Получение курса обмена валют
+  parameters:
+    - $ref: '#/components/parameters/exchangeFrom'
+    - $ref: '#/components/parameters/exchangeTo'
+    - $ref: '#/components/parameters/exchangeAction'
+    - $ref: '#/components/parameters/amount'
+  responses:
+    '200':
+      description: Курс обмена валют
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/CurrencyExchange'
+    '400':
+      $ref: "#/components/responses/BadRequest"
+    '401':
+      $ref: '#/components/responses/AccessForbidden'

@@ -1,0 +1,28 @@
+type: object
+required:
+  - amountExchange
+  - rate
+  - from
+  - to
+  - action
+  - amount
+properties:
+  amountExchange:
+    $ref: "#/components/schemas/ExchangeAmount"
+  cryptoCurrencyAmountWithFee:
+    $ref: "#/components/schemas/ExchangeAmount"
+  rate:
+    description: Курс обмена
+    type: number
+    example: '0.64'
+  from:
+    description: Отдаваемая валюта (символьный код согласно ISO 4217)
+    type: string
+  to:
+    description: Получаемая валюта (символьный код согласно ISO 4217)
+    type: string
+  action:
+    $ref: "#/components/schemas/ExchangeAction"
+  amount:
+    $ref: "#/components/schemas/Amount"
+

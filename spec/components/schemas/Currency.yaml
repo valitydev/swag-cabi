@@ -1,0 +1,3 @@
+type: string
+description: Валюта, символьный код согласно ISO 4217
+pattern: "^[A-Z]{3}$"
